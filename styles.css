@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "SummerCentury";
+    src: url('./font/SummerCentury-DYA91.otf');
+}
+
+body {
+    background-color: hsl(214, 82%, 90%);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'SummerCentury';
+    letter-spacing: 0.2rem;
+
+}
+
+#photoarea {
+    display: flex-wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.photo {
+    width: 25%;
+    margin: 1rem;
+}
+
+#photoshow {
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 6% 88% 6%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 98%;
+    background-color:hsl(214, 30%, 55%);
+    padding: 1rem;
+    display: none;
+}
+
+#shownphoto {
+    height: 92vh;
+    max-width: 88vw;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+
+.changePhoto {
+    background-size: cover;
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: hsl(214, 82%, 85%);
+    border-radius: 20%;
+}
+
+.changePhoto:hover {
+    cursor: pointer;
+}
+
+#previousphoto {
+    background-image: url(images/previous.png);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}    
+
+#nextphoto {
+    background-image: url(images/next.png);
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#closebutton {
+    background-image: url(images/close.png);
+    align-self: self-start;
+    justify-self: self-end;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.photo:hover {
+    cursor: pointer;
+}
